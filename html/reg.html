@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>免费注册用户 - 孔夫子旧书网：买你买不到的书</title>
+    <meta name="description" content="孔夫子旧书网是全球领先的中文古旧书交易平台，网站汇聚了全国12000家书店，38000个书摊，在售图书8300万种，注册用户600万人。网站秉承“网罗天下图书，传承中华文明”的理念，致力于成为“以交易为核心的中国传统文化信息和资料中心”。以书汇友，畅享阅读，买你买不到的书。">
+    <meta name="keywords" content="免费注册,用户注册,图书,图书网站,古籍,旧书,古旧书,网上书店">
+    <link rel="shortcut icon" href="../img/favicon.ico"" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reg.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+	<style>
+
+
+	</style>
+	<div class="top">
+		<div class="header w">
+			<h1 style="display: none;">孔夫子旧书网</h1>
+			<a class="fl" href=""><img width="206px" height="35px" src="../img/logo.png" alt=""></a>
+			<a class="fr" href="">给新版提建议</a>
+		</div>
+	</div>
+	<div class="content w">
+		<div class="login_box">
+			<h3 class="fl">注册</h3>
+		</div>
+		<form action="../php/reg.php" method="post" style="width: 300px">
+			<div class="input_list_box">
+				<div class="pass_box">
+					<input type="text" name="mobileNumber" placeholder="手机号"  />
+					<div style="display: none;position:absolute;left:414px;top:130px;color: #D13333;"><span></span><p>请输入正确的手机号</p></div>
+				</div>
+
+				<div class="inputs_box_line"></div>
+
+				<div class="pass_box">
+					<input type="text" name="mesNumber" placeholder="短信验证码" style="" />
+					<div style="display: none;position:absolute;left:414px;top:173px;color: #D13333;"><span></span><p>请输入验证码</p></div>
+				</div>
+
+				<div class="inputs_box_line"></div>
+
+				<div class="pass_box">
+					<input type="text" name="userName" placeholder="用户名（昵称），注册后不可更改" style="" />
+					<div style="display: none;position:absolute;left:414px;bottom:154px;color: #D13333;"><span></span><p>请输入用户名</p></div>
+				</div>
+
+				<div class="inputs_box_line"></div>
+
+				<div class="pass_box">
+					<input type="text" name="userPass" placeholder="设置密码" style="" />
+					<div style="display: none;position:absolute;left:414px;bottom:114px;color: #D13333;"><span></span><p>请输入密码</p></div>
+				</div>
+
+			</div>
+			<div class="auto_login_box">
+				<input class="" type="checkbox" checked /><span class="gray_9">我已阅读并接受孔网 <p style="display: inline-block;"><a style="color: #365899;" href="">《服务协议》</a></p>和<p style="display: inline-block;"><a style="color: #365899;" href="">《账户协议》</a></p></span>
+			</div>
+			<div class="submit_box">
+				<input type="submit" value="注册">
+			</div>
+			
+		</form>
+
+<script type="text/javascript">
+	$(".pass_box input")[0].onblur = function(){
+		if($(".pass_box input")[0].value != ""){
+			let xhr = new XMLHttpRequest();
+			xhr.open("POST","../php/pd.php","true");
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState == 4 && xhr.status == 200){
+					if(xhr.responseText == "1"){
+						$(".pass_box div")[0].style.display = "block";
+					}else{
+						$(".pass_box div")[0].style.display = "none";
+						console.log(xhr.responseText);
+					}
+				}
+			}
+			xhr.send("mobileNumber="+$(".pass_box input")[0].value);
+		}else{
+			$(".pass_box div")[0].css("display","none")
+		}
+	}
+
+</script>
+
+
+		<div class="switch_box">
+			<div class="switch"><span>已有孔网帐号</span><a href="../html/login.html">快速登录</a></div>
+		</div>
+
+	</div>
+	<div style="position:absolute;bottom:0;width:100%;">
+		<div class="footer-box">
+		    <div class="footer-wrap w clearfix">
+		        <div class="copyright-info-box fl">© 2002-2019  Kongfz.com 孔夫子旧书网  版权所有</div>
+		        <div class="link-box">
+		            <a class="item" target="_blank" rel="nofollow" >关于孔网</a>
+		            <a class="item" target="_blank" rel="nofollow" >联系我们</a>
+		            <a class="item" target="_blank" rel="nofollow" >帮助中心</a>
+		            <a class="item" target="_blank" rel="nofollow" >版权隐私</a>
+		            <a class="item" target="_blank" rel="nofollow" >广告业务</a>
+		            <a class="item" target="_blank" rel="nofollow" >工作机会</a>
+		            <a class="item" target="_blank">移动版</a>
+		            <a class="item" target="_blank">图书目录</a>
+		            <a class="item" target="_blank">图书标签</a>
+		        </div>
+		    </div>
+		</div>
+		
+	</div>
+</body>
+</html>

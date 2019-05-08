@@ -1,0 +1,1435 @@
+<html lang="zh-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta content="width=1020" name="viewport">
+    <meta name="renderer" content="webkit" />
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/jquery.pj.js"></script>
+    <script src="../js/index.js"></script>
+    <title>【孔夫子旧书网】网上买书：图书_书籍_古籍_二手书，网上卖书：网上书店_古旧书拍卖，中国领先的古旧书交易平台</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.ico"" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css">
+    <meta name="keywords" content="图书,书籍,旧书,古籍,二手书,古旧书交易,网上书店,网上买书,网上卖书,网购图书,小人书,特价书,线装书,民国书,外文书,国学,红色文献,信札,签名本,艺术品,收藏品,名人墨迹,字画,连环画,工艺品,古玩杂项">
+    <meta name="description" content="孔夫子旧书网是国内领先的古旧书交易平台，汇集全国各地13000家网上书店，50000家书摊，展示多达9000万种书籍；大量极具收藏价值的古旧珍本（明清、民国古籍善本，珍品期刊，名人墨迹，民国珍本，绝版书等）在孔网展示与交易，吸引了大量的学者、研究人员和藏书人长时间在线关注并参与。找图书网站、在网上买书、开网上书店卖书，首选孔夫子旧书网。">
+</head>
+<body>
+	<div class="header_nav_box">
+		<div class="header w">
+			<div class="header_l fl">
+				<div class="header_l_text">
+					<span>网罗天下图书</span>
+					<span>传承中华文明</span>
+				</div>
+			</div>
+			<div class="header_r fr">
+				<div class="header_r_list">
+					<div class="items">
+						<a href="">登录/注册</a>
+					</div>
+					<div class="items">
+						<a href="">消息</a>
+					</div>
+					<div class="items">
+						<a href=""><span style="display: inline-block;width: 16px;height: 16px;"></span>购物车</a>
+					</div>
+					<div class="items">
+						<a href="">我的订单</a>
+					</div>
+					<div class="items">
+						<a href="">个人中心</a>
+					</div>
+					<div class="items">
+						<a href="">卖家中心</a>
+					</div>
+					<div class="items">
+						<a href="">客服</a>
+					</div>
+					<div class="items phone">
+						<a href="">手机版</a>
+						<div class="items line">|</div>
+					</div>
+					<div class="items">
+						<a href="">送至 北京</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header_search_box">
+		<div class="header_search w">
+			<div class="header_search_l fl">
+				<div class="logo">
+					<a href=""><img src="../img/logo-250.png" alt=""></a>
+				</div>
+			</div>
+			<div class="header_search_r fr">
+				<form action="">
+					<div class="search_type">
+						<div class="item_type fl">商品</div>
+						<div class="item_type fl">拍卖</div>
+						<div class="item_type fl">店铺</div>
+						<div class="sign"></div>
+					</div>
+					<div class="search_input fl">
+						<input type="text" id="" class="fl">
+						<div class="search_select">
+							<div class="search_shop"><span class="search_shop_line"></span><span>在售</span><span class="search_shop_sjx"></span></div>
+							<div class="search_shoped"><span>已售</span></div>
+						</div>
+						<script>
+							$(".search_select div").mouseover(function(){
+								$(this).css({"background-color":"#ddd"});	
+								$(".search_select div:contains('售')").css("display","block");								
+							})
+							$(".search_select div").mouseout(function(){
+								$(this).css("background-color","#fff");	
+								$(".search_select div:eq(1)").css("display","none");	
+							});
+
+							$(".search_select div:contains('在售')").click(function(){
+								if($(this).text()==$(".search_select div:eq(0)").text()){
+									$(".search_select div:eq(0)").text("在售");
+									$(".search_select div:eq(1)").text("已售");
+									$(".search_select div:eq(1)").css("display","none");
+								}if($(this).text()==$(".search_select div:eq(1)").text()){
+									$(".search_select div:eq(0)").text("在售");
+									$(".search_select div:eq(1)").text("已售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+							})
+
+							$(".search_select div:contains('已售')").click(function(){
+								if($(this).text()==$(".search_select div:eq(0)").text()){
+									$(".search_select div:eq(0)").text("已售");
+									$(".search_select div:eq(1)").text("在售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+								if($(this).text()==$(".search_select div:eq(1)").text()){
+									$(".search_select div:eq(0)").text("已售");
+									$(".search_select div:eq(1)").text("在售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+							});
+
+
+					</script>
+
+						<div class="search_btn fr">搜索</div>
+					</div>
+					<div class="search_link fl">高级搜索</div>
+				</form>
+
+				<ul class="hotWorlds_list">
+					<li class="hotWorlds fl"><a href="">签名本</a></li>
+					<li class="hotWorlds fl"><a href="">百年孤独</a></li>
+					<li class="hotWorlds fl"><a href="">金庸</a></li>
+					<li class="hotWorlds fl"><a href="">悲惨世界</a></li>
+					<li class="hotWorlds fl"><a href="">中华遗产</a></li>
+					<li class="hotWorlds fl"><a href="">荣宝斋画谱</a></li>
+					<li class="hotWorlds fl"><a href="">日文原版</a></li>
+					<li class="hotWorlds fl"><a href="">读库</a></li>
+					<li class="hotWorlds fl"><a href="">电影介绍</a></li>
+					<li class="hotWorlds fl"><a href="">菜谱</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="nav_box" style="overflow: hidden;">
+		<div class="nav w">
+			<ul class="nav_ul fl">
+				<li class="nav_list fl" style="padding-left: 4px;"> <div><span  style="display: block;" class="header_line"></span><a href="">首页</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">书店区</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">书摊区</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">新书</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">在线拍</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">艺术品</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">资讯</a></div></li>
+				<li class="nav_list fl"><div><span class="header_line"></span><a href="">社区</a></div></li>
+			</ul>
+		</div>
+	</div>
+	<div style="background-color:#f7f7f6;overflow: hidden;">
+		<div class="content w">
+			<div class="content_left fl">
+				<!-- category表示类别 -->
+				<div class="category">
+					<ul class="category_ul_1">
+						<li class="category_list category_list_first">
+							<div class="category_show title">
+								<a href="">图书</a><a class="fr" href="">最新上书</a>
+							</div>
+						</li>
+						<li class="category_list firstColor">
+							<div class="category_box">
+								<div class="category_show">
+									<a href="">线装古籍</a> / <a href="">民国旧书</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							1
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show" >
+									<a href="">期刊</a> / <a href="">报纸</a> / <a href="">外文原著</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							2
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">国学古籍</a> / <a href="">收藏鉴赏</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							3
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">小说</a> / <a href="">文学</a> / <a href="">语言文字</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							4
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">历史</a> / <a href="">地理</a> / <a href="">艺术</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							5
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">军事</a> / <a href="">法律</a> / <a href="">政治</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							6
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">心理</a> / <a href="">哲学</a> / <a href="">宗教</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							7
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">期刊</a> / <a href="">报纸</a> / <a href="">外文原著</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							8
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">经济</a> / <a href="">社科</a> / <a href="">综合</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							9
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">童书</a> / <a href="">生活</a> / <a href="">体育</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							10
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">工程技术</a> / <a href="">互联网</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							11
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">自然科学</a> / <a href="">医药卫生</a>
+								</div>
+
+								<div>
+								</div>
+							</div>	
+						</li>
+						<div class="category_hide">
+							12
+						</div>
+						<li class="category_list">
+							<div  class="category_box">		
+								<div class="category_show">
+									<a href="">教辅</a> / <a href="">教材</a> / <a href="">考试</a>
+								</div>
+								<div>
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							13
+						</div>
+					</ul>
+								
+					<ul class="category_ul_2">
+						<li class="category_list category_list_first">
+							<div class="category_show title">
+								<a href="">艺术品与收藏</a><a href=""></a>
+							</div>
+						</li>
+						<div class="db_category_list">
+							<li class="category_list firstColor">
+								<div  class="category_box">
+									<div class="category_show ">
+										<a href="">名人墨迹</a> / <a href="">名人字画</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">古旧地图</a> / <a href="">照片影像</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<div class="category_hide">
+								1
+							</div>
+						</div>
+						<div class="db_category_list">
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">连环画</a> / <a href="">版画收藏画</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">邮票税纸</a> / <a href="">钱币</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<div class="category_hide">
+								2
+							</div>
+						</div>
+
+						<div class="db_category_list">
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">碑帖印谱</a> / <a href="">文房雅玩</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">玉石金银木器</a> / <a href="">漆器</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<div class="category_hide">
+								3
+							</div>
+						</div>
+
+
+						
+
+
+						<div class="db_category_list">
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">陶器瓷器</a> / <a href="">工艺品</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							
+							<li class="category_list">
+								<div  class="category_box">
+									<div class="category_show">
+										<a href="">红色收藏</a> / <a href="">收藏杂项</a>
+									</div>
+									<div >
+										
+									</div>
+								</div>
+							</li>
+							<div class="category_hide">
+								4
+							</div>
+						</div>
+					</ul>
+
+
+
+					<ul class="category_ul_3">
+						<li class="category_list category_list_first">
+							<div class="category_show title">
+								<a href="">文创与周边</a><a href=""></a>
+							</div>
+						</li>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">笔墨</a> / <a href="">纸本</a> / <a href="">卡片</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							1
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">日历</a> / <a href="">包装</a> / <a href="">壳套</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							2
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">器皿</a> / <a href="">摆件挂画</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							3
+						</div>
+						<li class="category_list">
+							<div  class="category_box">
+								<div class="category_show">
+									<a href="">动漫影视周边</a>
+								</div>
+								<div >
+									
+								</div>
+							</div>
+						</li>
+						<div class="category_hide">
+							4
+						</div>
+						
+					</ul>
+				</div>
+				<div class="split-block" style="width: 100%;height: 20px;"></div>
+				<div class="left_bar_ad" style="width: 100%";>
+					<ul class="left_bar_ad_ul">
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/a1.jpg" alt=""></a></li>
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/left_bar_ad1.png" alt=""></a></li>
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/left_bar_ad1.png" alt=""></a></li>
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/left_bar_ad1.png" alt=""></a></li>
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/left_bar_ad1.png" alt=""></a></li>
+						<li class="left_bar_ad_list"><a href=""><img src="../img/left_bar_ad2.png" alt=""><img src="../img/left_bar_ad1.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="platform" style="width: 100%;padding-top: 16px;">
+			      <a href="" class="item jiaoliu clearfix" target="_blank" style="border-bottom: solid 1px #e5e5e5;padding:6px 0;">
+			        <span class="ico pull-left">
+			          <span class="ico-box iconfont icon-shuyougujiushujiaoliu"></span>
+			        </span>
+			        古旧书交流中心
+			        <span class="text">
+			          <span class="lable">预约电话</span>
+			          <span class="lable">010-8430 8573</span>
+			        </span>
+			      </a>
+			    </div>
+				<div class="rule_box">
+					<div class="rule_tab" >
+						<span class="rule_span fl" style="">公告</span>
+						<span class="rule_span fl">规则</span>
+						<div class="rule_other_info fl">帮助与客服	</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="content_right fr">
+				<!-- 轮播图 -->
+				<div>
+					<div id="pj-lunbo4">
+						<div class="pj-Carousel">
+							<div class="pj-Carousel-box">
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+								<div class="pj-Carousel-item"></div>
+							</div>
+							<div class="pj-Carousel-active"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="content_right_banner">
+					<div class="content_right_banner_img">
+						<a href="">
+							<img src="../img/content_right_banner.jpg" width="100%" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="content_right_goodBook title_More" >
+					<div class="content_right_goodBookBox title_More_2">
+						<div class="content_right_goodBook_title title_More_3">
+							<span class="title_More_4">好书推荐</span><i class="title_More_5"> / </i> <span><a href="" class="title_More_6" ">更多</a></span>
+						</div>
+						<div class="content_right_goodBook_listBox">
+							<ul id="content_goodBook_ul" class="content_right_goodBook_ul" style="height: 550px;">
+								<!-- 好书推荐-->
+								<script>
+									let ulbox = document.getElementById("content_goodBook_ul");
+									for(let i=0;i<12;i++){
+										ulbox.innerHTML += `
+										<li class="content_right_goodBook_list fl">
+											<div class="book_msg">
+												<a href="">
+													<img src="../img/goodBook_list.jpg" height="100%" alt="">
+												</a>
+												<div class="book_textMsg">
+													<a href="" class="book_title">秋水堂论金瓶梅</a>
+													<span class="book_author">田晓菲 著</span>
+												</div>
+
+												<div class="book_price">
+													<div style="width:98px;margin: 0 auto;">
+														<span>￥</span><span>56.50</span><span>起</span>
+													</div>
+												</div>
+											</div>
+										</li>`
+									}
+								</script>
+							</ul>
+						</div>	
+					</div>
+					<div class="new_square_box title_More" >
+						<div class=".new_square_title title_More_2">
+							<div class="content_right_goodBook_title title_More_3">
+								<span class="title_More_4">孔夫子新书广场</span><i class="title_More_5"> / </i> <span><a href="" class="title_More_6" ">进店逛逛</a></span>
+							</div>
+						</div>
+					</div>
+					<div style="display: flex;justify-content: space-between;">
+						
+						<div class="new_book_list">
+							<div class="new_book_img">
+								<a href=""><img src="../img/book_background.jpg" alt=""></a>
+							</div>
+							<div class="new_book_list_box">
+								<div class="new_book_title">
+									<p><a href="">孙以煜签名钤印《文学笔记书-插画师》毛边</a></p>
+								</div>
+								<div class="introduce">
+									从作者收藏的苏俄版画中，选取文学名著插图和图书提要、作者简介成书。
+								</div>
+								<div class="tag">
+									<span>签名
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>钤印
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>毛边本
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>藏书票
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+								</div>
+								<div class="new_book_bottom">
+									<div class="new_f_left fl">
+										<span>￥</span>60.00
+										<span>包邮</span>
+									</div>
+									<div class="new_f_right fr">
+										<div class="err_tip">抢购失败，请稍后再试</div>
+										<div class="btn">立即抢购</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="new_book_list">
+							<div class="new_book_img">
+								<a href=""><img src="../img/book_background.jpg" alt=""></a>
+							</div>
+							<div class="new_book_list_box">
+								<div class="new_book_title">
+									<p><a href="">孙以煜签名钤印《文学笔记书-插画师》毛边</a></p>
+								</div>
+								<div class="introduce">
+									从作者收藏的苏俄版画中，选取文学名著插图和图书提要、作者简介成书。
+								</div>
+								<div class="tag">
+									<span>签名
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>钤印
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>毛边本
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>藏书票
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+								</div>
+								<div class="new_book_bottom">
+									<div class="new_f_left fl">
+										<span>￥</span>60.00
+										<span>包邮</span>
+									</div>
+									<div class="new_f_right fr">
+										<div class="err_tip">抢购失败，请稍后再试</div>
+										<div class="btn">立即抢购</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="new_book_list">
+							<div class="new_book_img">
+								<a href=""><img src="../img/book_background.jpg" alt=""></a>
+							</div>
+							<div class="new_book_list_box">
+								<div class="new_book_title">
+									<p><a href="">孙以煜签名钤印《文学笔记书-插画师》毛边</a></p>
+								</div>
+								<div class="introduce">
+									从作者收藏的苏俄版画中，选取文学名著插图和图书提要、作者简介成书。
+								</div>
+								<div class="tag">
+									<span>签名
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>钤印
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>毛边本
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+									<span>藏书票
+										<div class="jiao">
+											<div class="jiao_inner"></div>
+										</div>
+									</span>
+								</div>
+								<div class="new_book_bottom">
+									<div class="new_f_left fl">
+										<span>￥</span>60.00
+										<span>包邮</span>
+									</div>
+									<div class="new_f_right fr">
+										<div class="err_tip">抢购失败，请稍后再试</div>
+										<div class="btn">立即抢购</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ad_zhuanti w" style="clear:both;">
+			<a href=""><img src="../img/ad_zhuanti1.jpg" alt=""></a>
+			<a href=""><img src="../img/ad_zhuanti1.jpg" alt=""></a>
+			<a href=""><img src="../img/ad_zhuanti1.jpg" alt=""></a>
+		</div>
+	</div>
+	<!-- 第一个 -->
+	<div class="jiu_book" style="height: 688px;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">旧书</span>
+						<li class=""><a href="" target="_blank">四部丛刊</a></li>  
+						<li class=""><a href="" target="_blank">商务印书馆</a></li>  
+						<li class=""><a href="" target="_blank">珂罗版</a></li>  
+						<li class=""><a href="" target="_blank">梁启超</a></li>  
+						<li class=""><a href="" target="_blank">十三经清人注</a></li>  
+						<li class=""><a href="" target="_blank">中华书局</a></li>  
+						<li class=""><a href="" target="_blank">唐诗三百首</a></li>  
+						<li class=""><a href="" target="_blank">经眼录</a></li>  
+						<li class=""><a href="">胡适文集</a></li>    
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>国学经典 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_1">
+					<script>
+						let product_1 = document.getElementById("gallery_main_product_1");
+						for(let i=0;i<10;i++){
+							product_1.innerHTML += `
+								<span class="gallery_lot_slide shop_item">
+								<a href="" class="gallery_book_list_img"><img src="../img/gallery_img_1.jpg" alt=""></a>
+								<a href="" class="gallery_main_product_text">菽园杂记</a>
+								<a href="" class="gallery_book_time">[明]陆容  著</a>
+								<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+								</span>`
+						}
+					</script>
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_1">
+						<script>
+							let recommend_ul_1 = document.getElementById("recommend_1");
+								for(let i=0;i<10;i++){
+								recommend_ul_1.innerHTML += `
+									<li>
+										<div class="fl"><span class="ico_small_line"></span></div>
+										<div class="text_box"><a href="" class="ancient_right_list_name">通雅轩</a></div>
+										<p class="ancient_right_list_intro">实体古籍书店，主营国学古籍,线装,文史,艺术类图书。</p>
+										<p class="list_line"></p>
+									</li>`
+							}
+						</script>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 第二个 -->
+	<div class="jiu_book" style="height: 688px;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">新书</span>
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>新近出版 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_2">
+
+						<script>
+						let product2 = document.getElementById("gallery_main_product_2");
+							for(let i=0;i<10;i++){
+								product2.innerHTML += `
+									<span class="gallery_lot_slide shop_item">
+									<a href="" class="gallery_book_list_img"><img src="../img/gallery_img_2.jpg" alt=""></a>
+									<a href="" class="gallery_main_product_text">菽园杂记</a>
+									<a href="" class="gallery_book_time">[明]陆容  著</a>
+									<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+									</span>`
+							}
+						</script>
+
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<!-- <p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p> -->
+					<p class="gallery_main_title"><span>新书销售排行榜 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<ul id="recommend_2">
+						<script>
+							let recommend_ul_2 = document.getElementById("recommend_2");
+								for(let i=0;i<10;i++){
+								recommend_ul_2.innerHTML += `
+									<li>
+							<div class="fl"><span class="ico_item_list">1.</span></div>
+							<div class="text_box"><a href="" class="ancient_right_list_name">秋水堂论金瓶梅</a><i class="fr_price" style=""><span style="">￥</span>56.50<span>&nbsp;起</span></i></div>
+							<p class="ancient_right_list_intro">田晓菲 著</p>
+							<p class="list_line"></p>
+						</li>`
+							}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 第三个 -->
+	<div class="jiu_book" style="height: 668px;background-color: #f7f7f6;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">艺文集览</span>
+						<li class=""><a href="" target="_blank">人民美术</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅全集</a></li>  
+						<li class=""><a href="" target="_blank">巴金</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>旧书精选 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_3">
+						<script>
+							let product3 = document.getElementById("gallery_main_product_3");
+								for(let i=0;i<10;i++){
+									product3.innerHTML += `
+										<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_3.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">菽园杂记</a>
+							<a href="" class="gallery_book_time">[明]陆容  著</a>
+							<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+						</span>`
+							}
+						</script>
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_3">
+						<script>
+							let recommend_ul_3 = document.getElementById("recommend_3");
+								for(let i=0;i<10;i++){
+								recommend_ul_3.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">通雅轩</a></div>
+								<p class="ancient_right_list_intro">实体古籍书店，主营国学古籍,线装,文史,艺术类图书。</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 第四个 -->
+
+	<div class="jiu_book" style="height: 668px;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">艺文集览</span>
+						<li class=""><a href="" target="_blank">人民美术</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅全集</a></li>  
+						<li class=""><a href="" target="_blank">巴金</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>旧书精选 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_4">
+						<script>
+							let product4 = document.getElementById("gallery_main_product_4");
+								for(let i=0;i<10;i++){
+									product4.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_4.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">菽园杂记</a>
+							<a href="" class="gallery_book_time">[明]陆容  著</a>
+							<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_4">
+						<script>
+							let recommend_ul_4 = document.getElementById("recommend_4");
+								for(let i=0;i<10;i++){
+								recommend_ul_4.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">通雅轩</a></div>
+								<p class="ancient_right_list_intro">实体古籍书店，主营国学古籍,线装,文史,艺术类图书。</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 第五个 -->
+	<div class="jiu_book" style="height: 668px;background-color: #f7f7f6;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">艺文集览</span>
+						<li class=""><a href="" target="_blank">人民美术</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅全集</a></li>  
+						<li class=""><a href="" target="_blank">巴金</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>旧书精选 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_5">
+						<script>
+							let product5 = document.getElementById("gallery_main_product_5");
+								for(let i=0;i<10;i++){
+									product5.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_5.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">菽园杂记</a>
+							<a href="" class="gallery_book_time">[明]陆容  著</a>
+							<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_5">
+						<script>
+							let recommend_ul_5 = document.getElementById("recommend_5");
+								for(let i=0;i<10;i++){
+								recommend_ul_5.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">通雅轩</a></div>
+								<p class="ancient_right_list_intro">实体古籍书店，主营国学古籍,线装,文史,艺术类图书。</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 第六个 -->
+	<div class="jiu_book" style="height: 668px;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">民国旧书</span>
+						<li class=""><a href="" target="_blank">王云五</a></li>  
+						<li class=""><a href="" target="_blank">巴金</a></li>  
+						<li class=""><a href="" target="_blank">郑则端</a></li>  
+						<li class=""><a href="" target="_blank">商务印书馆</a></li>  
+						<li class=""><a href="" target="_blank">东北书店</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅先生</a></li>  
+						<li class=""><a href="" target="_blank">上海中华书局</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>百年拾遗 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_6">
+						<script>
+							let product6 = document.getElementById("gallery_main_product_6");
+								for(let i=0;i<10;i++){
+									product6.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_6.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">民国新文学小说*《明珠与黑炭》*一册全</a>
+							<a href="" class="gallery_book_time">游谷轩</a>
+							<p class="gallery_main_product_price"><i><span style="font-size:14px;color: #bf7f5f;">￥</span>18.00 </i><span>起</span></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_6">
+						<script>
+							let recommend_ul_6 = document.getElementById("recommend_6");
+								for(let i=0;i<10;i++){
+								recommend_ul_6.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">半纸斋</a></div>
+								<p class="ancient_right_list_intro">十年老店、实物拍照、书、品皆上佳。</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第七个 -->
+	<div class="jiu_book" style="height: 668px;background-color:#f7f7f6;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">古籍拍卖</span>
+						<!-- <li class=""><a href="" target="_blank">人民美术</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅全集</a></li>  
+						<li class=""><a href="" target="_blank">巴金</a></li>   -->
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>古籍珍本 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_7">
+						<script>
+							let product7 = document.getElementById("gallery_main_product_7");
+								for(let i=0;i<10;i++){
+									product7.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_7.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">孔网首拍】明刻本【明代文学家王世贞编【尺牘清裁】30册補遗1卷一套全。该书收录周、汉、魏、吴、晋、齐、隋、唐、宋、明等帝王、名人篇章，是书世贞益为二十八卷，复采唐代至明之作通为六十卷。又旁搜稗史，得梁、隋以前佚作四十馀条，内容举世罕见弘大博深 一代大家的呕心沥血之作、寻常难见之物、藏者宝之。</a>
+							<a href="" class="gallery_book_time">剩余 <span class="gray6">10小时34分钟</span></a>
+							<p class="gallery_main_product_price"><span>当前价</span><i><span style="font-size:14px;color: #bf7f5f;">￥</span>24560 </i></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_7">
+						<script>
+							let recommend_ul_7 = document.getElementById("recommend_7");
+								for(let i=0;i<10;i++){
+								recommend_ul_7.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">青韵居线装古籍专卖</a></div>
+								<p class="ancient_right_list_intro">古籍专卖店铺</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第八个 -->
+	<div class="jiu_book" style="height: 668px;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">民国书刊拍卖</span>
+						<li class=""><a href="" target="_blank">沫沫小姐</a></li>  
+						<li class=""><a href="" target="_blank">水田先生</a></li>  
+						<li class=""><a href="" target="_blank">孔网代买代卖中心国书拍卖</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>民国图书文献 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_8">
+						<script>
+							let product8 = document.getElementById("gallery_main_product_8");
+								for(let i=0;i<10;i++){
+									product8.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_8.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">少见红色文献  论民主专政 毛泽东著 松江省宣传部1949年印制 藏家批注本16页</a>
+							<a href="" class="gallery_book_time">剩余 <span class="gray6">10小时34分钟</span></a>
+							<p class="gallery_main_product_price"><span>当前价</span><i><span style="font-size:14px;color: #bf7f5f;">￥</span>24560 </i></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p>
+					<ul id="recommend_8">
+						<script>
+							let recommend_ul_8 = document.getElementById("recommend_8");
+								for(let i=0;i<10;i++){
+								recommend_ul_8.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">北京大亮古旧书店</a></div>
+								<p class="ancient_right_list_intro">经营民国旧书，其他古书旧物，各具特色，亦可一览。</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第九个 -->
+	<div class="jiu_book" style="height: 668px;background-color:#f7f7f6;">
+		<div class="ancient_box w">
+			<div class="ancient_title">
+				<div class="floor_big_title">
+					<ul> 
+						<span class="floor-big-title-name">艺术品拍卖</span>
+						<li class=""><a href="" target="_blank">名人字画</a></li>  
+						<li class=""><a href="" target="_blank">鲁迅全集</a></li>  
+						<li class=""><a href="" target="_blank">连环画</a></li>  
+						<li class=""><a href="" target="_blank">名人墨迹</a></li>  
+						<li class=""><a href="" target="_blank">版画宣传画</a></li>  
+						<li class=""><a href="" target="_blank">邮票税票</a></li>  
+						<li class=""><a href="" target="_blank">钱币</a></li>  
+						<li class=""><a href="" target="_blank">碑贴印谱</a></li>  
+						<li class=""><a href="" target="_blank">照片印象</a></li>  
+						<li class=""><a href="" target="_blank">古玩杂项</a></li>  
+					</ul>
+				</div>
+			</div>
+			<div class="ancient_left fl">
+				<div class="gallery_main_list fl">
+					<p class="gallery_main_title"><span>拍卖精选 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<div class="gallery_main_product" id="gallery_main_product_9">
+						<script>
+							let product9 = document.getElementById("gallery_main_product_9");
+								for(let i=0;i<10;i++){
+									product9.innerHTML += `
+											<span class="gallery_lot_slide shop_item">
+							<a href="" class="gallery_book_list_img" style="border:1px solid #ddd;"><img src="../img/gallery_img_9.jpg" alt=""></a>
+							<a href="" class="gallery_main_product_text">清末黑龙江都督、中俄堪界要员、“吉林三杰”之一 宋小濂 致张建勋（季端）书札一通两页（为《中俄密约》签订后，改定“东清铁路展地伐木煤矿合同”之重要文献，提及“然庚子乱后，彼族势力方张，所失甚钜！今幸少作退步，而又有前合同影响，无论办到何等地位终是我国受亏，兹将改订合同之三...） HXTX12568</a>
+							<a href="" class="gallery_book_time">剩余 <span class="gray6">10小时34分钟</span></a>
+							<p class="gallery_main_product_price"><span>当前价</span><i><span style="font-size:14px;color: #bf7f5f;">￥</span>24560 </i></p>
+						</span>`
+							}
+						</script>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="ancient_right fr">
+				<div class="ancient_right_list">
+					<!-- <p class="ancient_right_title">
+						<span><b>书店推荐</b></span>
+					</p> -->
+					<p class="gallery_main_title"><span>拍卖专场 <i> / </i> <a href="" target="_blank">更多</a></span></p>
+					<ul id="recommend_9">
+						<script>
+							let recommend_ul_9 = document.getElementById("recommend_9");
+								for(let i=0;i<10;i++){
+								recommend_ul_9.innerHTML += `
+							<li>
+								<div class="fl"><span class="ico_small_line"></span></div>
+								<div class="text_box"><a href="" class="ancient_right_list_name">黄河人1：第122届老陶瓷.收藏艺术品拍卖专场</a></div>
+								<p class="ancient_right_list_intro">4月22日-4月29日</p>
+								<p class="list_line"></p>
+							</li>`
+							}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer_paimai w">
+		<div class="paimai_title">
+			<span>拍卖公司联盟</span><i> / </i><a href="">更多</a>
+		</div>
+		<div class="paimai_con">
+			<ul id="paimai_con_ul_1" style="clear: both;">
+				<li class="paimai_list">
+					<div class="first">北京地区</div>
+				</li>
+				<script>
+					let paimai_con_ul_1 = document.getElementById("paimai_con_ul_1");
+						for(let i=0;i<15;i++){
+						paimai_con_ul_1.innerHTML += `
+					<li class="paimai_list"><a href=""><img src="../img/pm_img_1_1.png" alt=""></a></li>`
+					}
+				</script>
+				
+			</ul>
+			<ul id="paimai_con_ul_2">
+				<li class="paimai_list" style="clear: both;">
+					<div class="first">其他地区</div>
+				</li>
+				<script>
+					let paimai_con_ul_2 = document.getElementById("paimai_con_ul_2");
+						for(let i=0;i<15;i++){
+						paimai_con_ul_2.innerHTML += `
+					<li class="paimai_list"><a href=""><img src="../img/pm_img_1_1.png" alt=""></a></li>`
+					}
+				</script>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer_friends w" >
+		<div class="footer_friend_box">
+			<div class="footer_friend_tit">
+				<a href="" >合作伙伴</a>
+				<a href=""  class="now">友情链接</a>
+				<a href="">推荐专题</a>
+			</div>
+			<div class="footer_friend_list">
+				<div class="foot_box">
+					<ul>
+						<li><a href="">图书大全</a></li>			
+					</ul>
+				</div>
+				<div class="foot_box">
+					<ul>
+						<li><a href="">图书大全</a></li>
+						<li><a href="">图书大全</a></li>
+						<li><a href="">图书大全</a></li>
+					</ul>
+				</div>
+				<div class="foot_box" style="display: block;">
+					<ul>
+						<li><a href="">图书大全</a></li>
+						<li><a href="">图书大全</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-box">
+	    <div class="footer-wrap w clearfix">
+	        <div class="copyright-info-box fl">© 2002-2019  Kongfz.com 孔夫子旧书网  版权所有</div>
+	        <div class="link-box">
+	            <a class="item" target="_blank" rel="nofollow" >关于孔网</a>
+	            <a class="item" target="_blank" rel="nofollow" >联系我们</a>
+	            <a class="item" target="_blank" rel="nofollow" >帮助中心</a>
+	            <a class="item" target="_blank" rel="nofollow" >版权隐私</a>
+	            <a class="item" target="_blank" rel="nofollow" >广告业务</a>
+	            <a class="item" target="_blank" rel="nofollow" >工作机会</a>
+	            <a class="item" target="_blank">移动版</a>
+	            <a class="item" target="_blank">图书目录</a>
+	            <a class="item" target="_blank">图书标签</a>
+	        </div>
+	        <div class="Licence-info-box">
+	            <span class="text">京ICP证041501号</span>
+	            <span class="text-split">|</span>
+	            <a href="" class="text" target="_blank"><img style="width:13px;margin-right: 5px;vertical-align: middle;" src="../img/beian.png" alt=""><span style="vertical-align: middle;">京公网安备 11010502035846号</span></a>
+	            <span class="text-split">|</span>
+	            <a class="text" target="_blank" rel="nofollow" href="">出版物经营许可证</a>
+	            <span class="text-split">|</span>
+	            <a class="text" target="_blank" rel="nofollow" href="">企业营业执照</a>
+	            <span class="text-split">|</span>
+	            <span class="text">违法和不良信息举报电话：010-64755951， 举报邮箱 shenhe@kongfz.com</span>
+	        </div>
+	    </div>
+	</div>
+	<div class="aside" id="aside_1">
+		<div class="item back_top">
+			<div class="back_top_text"></div>
+		</div>
+		<div class="item feed_back">
+			<div class="back_top_text"></div>
+		</div>
+	</div>
+	<style>
+		.aside{
+		    position: fixed;
+		    right: 12px;
+		    bottom: 140px;
+		    z-index: 10001;
+		    width: 40px;
+		    border-bottom: 1px solid #e5e5e5;
+		}
+		.back_top{
+			width: 50px;
+			height: 50px;
+			border:1px solid;
+		}
+		.feed_back{
+			width: 50px;
+			height: 50px;
+			border:1px solid;
+		}
+	</style>
+	<script>
+		$(window).scroll(function(){
+			if ($(window).scrollTop()>500){
+				$(".back_top").fadeIn(500);
+			}else{
+				$(".back_top").fadeOut(500);
+			}
+		})
+		$(".back_top").click(function(){
+			$('body,html').animate({scrollTop:0},500);
+            return false;
+		}).hover(function(){
+
+		})
+	</script>
+</body>
+</html>

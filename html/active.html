@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta content="width=1020" name="viewport">
+    <title>【藏书单】咱们工人有力量_孔夫子旧书网</title>
+    <meta name="description" content="孔夫子网上书店：汇集了全国7124家网上书店，展示多达43281025种图书书籍，包含大量极具收藏价值的古旧珍本（明清、民国古籍善本、小人书、珍本期刊、名人墨迹、民国珍本、绝版书等）。孔夫子旧书网为广大书友提供二手图书买卖与收藏品交易市场；开网上书店、二手书交易、网上买书卖书，首选孔夫子旧书网。">
+    <meta name="keywords" content="孔夫子旧书网,网上书店,古旧书,旧书,旧书网,旧书网站,收藏品,古籍善本,旧书店,收藏品,收藏品交易,图书,书籍,杂志,图书网购,小人书,特价书">
+    <link rel="shortcut icon" href="../img/favicon.ico"" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/active.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+	<div class="header_nav_box">
+		<div class="header w">
+			<div class="header_l fl">
+				<div class="header_l_text">
+					<span>首页</span>
+					<span>书店区</span>
+					<span>书摊区</span>
+					<span>新书</span>
+					<span>在线拍卖</span>
+					<span>艺术品专场</span>
+				</div>
+			</div>
+			<div class="header_r fr">
+				<div class="header_r_list">
+					<div class="items">
+						<a href="">登录/注册</a>
+					</div>
+					<div class="items">
+						<a href="">消息</a>
+					</div>
+					<div class="items">
+						<a href=""><span style="display: inline-block;width: 16px;height: 16px;"></span>购物车</a>
+					</div>
+					<div class="items">
+						<a href="">我的订单</a>
+					</div>
+					<div class="items">
+						<a href="">个人中心</a>
+					</div>
+					<div class="items">
+						<a href="">卖家中心</a>
+					</div>
+					<div class="items">
+						<a href="">客服</a>
+					</div>
+					<div class="items phone">
+						<a href="">手机版</a>
+						<div class="items line">|</div>
+					</div>
+					<div class="items">
+						<a href="">送至 北京</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="header_search_box">
+		<div class="header_search w">
+			<div class="header_search_l fl">
+				<div class="logo">
+					<a href=""><img src="../img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div class="header_search_r fr">
+				<form action="">
+					<div class="search_type">
+						<div class="item_type fl">商品</div>
+						<div class="item_type fl">拍卖</div>
+						<div class="item_type fl">店铺</div>
+						<div class="sign"></div>
+					</div>
+					<div class="search_input fl">
+						<input type="text" id="" class="fl">
+						<div class="search_select">
+							<div class="search_shop"><span class="search_shop_line"></span><span>在售</span><span class="search_shop_sjx"></span></div>
+							<div class="search_shoped"><span>已售</span></div>
+						</div>
+						<script>
+							$(".search_select div").mouseover(function(){
+								$(this).css({"background-color":"#ddd"});	
+								$(".search_select div:contains('售')").css("display","block");								
+							})
+							$(".search_select div").mouseout(function(){
+								$(this).css("background-color","#fff");	
+								$(".search_select div:eq(1)").css("display","none");	
+							});
+
+							$(".search_select div:contains('在售')").click(function(){
+								if($(this).text()==$(".search_select div:eq(0)").text()){
+									$(".search_select div:eq(0)").text("在售");
+									$(".search_select div:eq(1)").text("已售");
+									$(".search_select div:eq(1)").css("display","none");
+								}if($(this).text()==$(".search_select div:eq(1)").text()){
+									$(".search_select div:eq(0)").text("在售");
+									$(".search_select div:eq(1)").text("已售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+							})
+
+							$(".search_select div:contains('已售')").click(function(){
+								if($(this).text()==$(".search_select div:eq(0)").text()){
+									$(".search_select div:eq(0)").text("已售");
+									$(".search_select div:eq(1)").text("在售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+								if($(this).text()==$(".search_select div:eq(1)").text()){
+									$(".search_select div:eq(0)").text("已售");
+									$(".search_select div:eq(1)").text("在售");
+									$(".search_select div:eq(1)").css("display","none");
+								}
+							});
+
+
+					</script>
+
+						<div class="search_btn fr">搜索</div>
+					</div>
+					<div class="search_link fl">高级搜索</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<style>
+		.content{width: 100%;margin: 0 auto;background-color:#FEE6A4;overflow: hidden;padding-bottom: 35px;}
+		.banner_pic{margin-bottom: 20px;position: relative;overflow:hidden;}
+		.banner_pic_box img{width: 1920px;position: absolute;left:50%; margin-left:-960px; ;top: 0;overflow: hidden;}
+		.book_list{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.book_list h3{height: 100px;line-height: 100px;font-size: 26px;font-weight: 400;text-align: center;}
+		.img_box{
+			width: 168px;
+			height: 168px;
+			display: inline-block;
+			text-align: center;
+		}
+		.items_box{
+		    position: relative;
+		    width: 495px;
+		    height: 170px;
+		    /*margin-right: 10px;*/
+		    margin-bottom: 10px;
+		    background: #fff;
+		    border: 1px solid #eaeaea;
+		    box-sizing: border-box;
+		}
+		.items_box:nth-child(2n){
+			margin-right: 10px;
+		}
+		.txt_box{
+			width: 325px;
+    		padding: 20px 10px;
+    		box-sizing: border-box;
+		}
+		.txt_box div:nth-of-type(1){
+				height: 14px;
+			    line-height: 14px;
+			    margin-bottom: 8px;
+			    font-size: 14px;
+			    color: #333;
+			    text-align: left;
+			    overflow: hidden;
+		}
+		.txt_box div:nth-of-type(2){
+				max-height: 40px;
+			    line-height: 20px;
+			    margin-bottom: 12px;
+			    font-size: 12px;
+			    color: #999;
+			    text-align: left;
+			    overflow: hidden;
+		}
+		.txt_box div:nth-of-type(3){
+			    height: 54px;
+			    font-size: 12px;
+			    color: #ba7e48;
+			    line-height: 18px;
+			    text-align: left;
+			    overflow: hidden;
+		}
+		.book_list{
+			overflow: hidden;
+		}
+	</style>
+	<div class="content">
+		<div class="banner_pic">
+			<div class="banner_pic_box" style="height:500px;">
+				<img src="../img/active.jpg" alt="">
+			</div>
+		</div>	
+		<div class="book_list">
+			<h3>全世界联合</h3>
+			<ul id="book_list_box">
+				<script>
+					window.onload = function(){
+						let book_list_box = document.getElementById("book_list_box");
+							for(let i=0;i<10;i++){
+							book_list_box.innerHTML += `
+								<li class="items_box fl">
+									<div class="items_img_txt">
+										<div class="img_box fl"><a href=""><img src="../img/active_book_img.jpg" height="100%" alt=""></a></div>
+										<div class="txt_box fl">
+											<div>社会分工论</div>
+											<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+											<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+										</div>
+									</div>
+								</li>`
+						}
+					}
+				</script>
+			</ul>
+		</div>
+		<!--  -->
+		<div class="book_list">
+			<h3>全世界联合</h3>
+			<ul id="book_list_box">
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+				<li class="items_box fl">
+					<div class="items_img_txt">
+						<div class="img_box fl"><a href=""><img src="../img/active_book_img1.jpg" height="100%" alt=""></a></div>
+						<div class="txt_box fl">
+							<div>社会分工论</div>
+							<div>[法]涂尔干  著；渠东  译/生活·读书·新知三联书店/2000-04/平装</div>
+							<div>《社会分工论》是法国社会学家涂尔干1893年的博士论文，是其开山之作，核心信息是“劳动分工并不是纯粹经济现象”</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<div class="footer-box">
+		    <div class="footer-wrap w clearfix">
+		        <div class="copyright-info-box fl">© 2002-2019  Kongfz.com 孔夫子旧书网  版权所有</div>
+		        <div class="link-box">
+		            <a class="item" target="_blank" rel="nofollow" >关于孔网</a>
+		            <a class="item" target="_blank" rel="nofollow" >联系我们</a>
+		            <a class="item" target="_blank" rel="nofollow" >帮助中心</a>
+		            <a class="item" target="_blank" rel="nofollow" >版权隐私</a>
+		            <a class="item" target="_blank" rel="nofollow" >广告业务</a>
+		            <a class="item" target="_blank" rel="nofollow" >工作机会</a>
+		            <a class="item" target="_blank">移动版</a>
+		            <a class="item" target="_blank">图书目录</a>
+		            <a class="item" target="_blank">图书标签</a>
+		        </div>
+		    </div>
+		</div>
+		
+	</div>
+</body>
+</html>
